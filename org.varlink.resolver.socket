@@ -1,0 +1,8 @@
+[Unit]
+Description=Varlink Service Resolver and Activator
+
+[Socket]
+ListenStream=/run/org.varlink.resolver
+
+[Install]
+WantedBy=sockets.target
