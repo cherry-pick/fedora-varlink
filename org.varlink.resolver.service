@@ -4,7 +4,7 @@ Requires=org.varlink.resolver.socket
 
 [Service]
 Type=simple
-ExecStart=/usr/bin/org.varlink.resolver unix:/run/org.varlink.resolver /usr/lib/fedora.json
+ExecStart=/usr/bin/org.varlink.resolver /run/org.varlink.resolver /usr/lib/fedora.json
 
 [Install]
 WantedBy=multi-user.target
