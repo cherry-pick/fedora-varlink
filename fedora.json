@@ -60,7 +60,10 @@
       "address": "/run/com.redhat.system.accounts",
       "interfaces": [
         "com.redhat.system.accounts"
-      ]
+      ],
+      "executable": {
+        "path": "/usr/lib/com.redhat.system/accounts.py"
+      }
     }
   ]
 }
