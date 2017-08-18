@@ -55,6 +55,12 @@
         "org.varlink.resolver",
         "org.varlink.activator"
       ]
+    },
+    {
+      "address": "/run/com.redhat.system.accounts",
+      "interfaces": [
+        "com.redhat.system.accounts"
+      ]
     }
   ]
 }

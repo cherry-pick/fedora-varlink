@@ -16,6 +16,7 @@ Requires:       io.systemd.sysinfo
 Requires:       org.kernel.kmod
 Requires:       org.varlink.http
 Requires:       org.varlink.resolver
+Requires:       com.redhat.system
 
 %description
 Fedora Varlink System Interface configuration.
