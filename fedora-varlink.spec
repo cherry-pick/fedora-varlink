@@ -1,13 +1,10 @@
-%define build_date %(date +"%%a %%b %%d %%Y")
-%define build_timestamp %(date +"%%Y%%m%%d.%%H%M%%S")
-
 Name:           fedora-varlink
 Version:        1
-Release:        %{build_timestamp}%{?dist}
+Release:        1%{?dist}
 Summary:        Fedora Varlink System Interfaces
 License:        ASL2.0
-URL:            https://github.com/varlink/fedora-varlink
-Source0:        https://github.com/varlink/fedora-varlink/archive/v%{version}.tar.gz
+URL:            https://github.com/varlink/%{name}
+Source0:        https://github.com/varlink/%{name}/archive/%{name}-%{version}.tar.gz
 BuildRequires:  systemd
 Requires:       io.systemd.devices
 Requires:       io.systemd.journal
@@ -47,5 +44,5 @@ install -m 0644 org.varlink.resolver.socket %{buildroot}%{_unitdir}
 %{_unitdir}/org.varlink.resolver.socket
 
 %changelog
-* %{build_date} <info@varlink.org> %{version}-%{build_timestamp}
-- %{name} %{version}
+* Tue Aug 29 2017 <info@varlink.org> 1-1
+- fedora-varlink 1
