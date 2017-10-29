@@ -5,7 +5,7 @@
   "url": "https://github.com/varlink/fedora-varlink",
   "services": [
     {
-      "address": "unix:/run/io.systemd.devices",
+      "address": "unix:/run/io.systemd.devices;mode=0666",
       "interfaces": [
         "io.systemd.devices"
       ],
@@ -14,7 +14,7 @@
       }
     },
     {
-      "address": "unix:/run/io.systemd.journal",
+      "address": "unix:/run/io.systemd.journal;mode=0666",
       "interfaces": [
         "io.systemd.journal"
       ],
@@ -23,7 +23,7 @@
       }
     },
     {
-      "address": "unix:/run/io.systemd.network",
+      "address": "unix:/run/io.systemd.network;mode=0666",
       "interfaces": [
         "io.systemd.network"
       ],
@@ -32,7 +32,7 @@
       }
     },
     {
-      "address": "unix:/run/io.systemd.sysinfo",
+      "address": "unix:/run/io.systemd.sysinfo;mode=0666",
       "interfaces": [
         "io.systemd.sysinfo"
       ],
@@ -41,7 +41,7 @@
       }
     },
     {
-      "address": "unix:/run/org.kernel.kmod",
+      "address": "unix:/run/org.kernel.kmod;mode=0666",
       "interfaces": [
         "org.kernel.kmod"
       ],
@@ -50,14 +50,14 @@
       }
     },
     {
-      "address": "unix:/run/org.varlink.resolver",
+      "address": "unix:/run/org.varlink.resolver;mode=0666",
       "interfaces": [
         "org.varlink.resolver",
         "org.varlink.activator"
       ]
     },
     {
-      "address": "unix:/run/com.redhat.system.accounts",
+      "address": "unix:/run/com.redhat.system.accounts;mode=0666",
       "interfaces": [
         "com.redhat.system.accounts"
       ],
