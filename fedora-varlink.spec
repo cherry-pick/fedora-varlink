@@ -1,5 +1,5 @@
 Name:           fedora-varlink
-Version:        1
+Version:        2
 Release:        1%{?dist}
 Summary:        Fedora Varlink System Interfaces
 License:        ASL2.0
@@ -24,6 +24,7 @@ Fedora Varlink System Interface configuration.
 %install
 install -d %{buildroot}%{_prefix}/lib
 install fedora.json %{buildroot}%{_prefix}/lib
+sed -i -e 's#"version":\s*"[0-9]\+"#"version": "%{fedora}"#' %{buildroot}%{_prefix}/lib/fedora.json
 
 install -d %{buildroot}%{_unitdir}
 install -m 0644 org.varlink.resolver.service %{buildroot}%{_unitdir}
@@ -44,5 +45,8 @@ install -m 0644 org.varlink.resolver.socket %{buildroot}%{_unitdir}
 %{_unitdir}/org.varlink.resolver.socket
 
 %changelog
+* Mon Jan 22 2018 Harald Hoyer <harald@redhat.com> - 2
+- replace fedora version
+
 * Tue Aug 29 2017 <info@varlink.org> 1-1
 - fedora-varlink 1
