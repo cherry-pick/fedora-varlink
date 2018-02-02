@@ -14,6 +14,7 @@ Requires:       org.kernel.kmod
 Requires:       org.varlink.http
 Requires:       org.varlink.resolver
 Requires:       com.redhat.system
+Requires:       libvarlink-util
 
 %description
 Fedora Varlink System Interface configuration.
