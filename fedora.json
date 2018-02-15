@@ -32,12 +32,12 @@
       }
     },
     {
-      "address": "unix:/run/io.systemd.sysinfo;mode=0666",
+      "address": "unix:/run/com.redhat.machine;mode=0666",
       "interfaces": [
-        "io.systemd.sysinfo"
+        "com.redhat.machine"
       ],
       "executable": {
-        "path": "/usr/bin/io.systemd.sysinfo"
+        "path": "/usr/bin/com.redhat.machine"
       }
     },
     {
