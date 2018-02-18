@@ -9,11 +9,11 @@ BuildRequires:  systemd
 Requires:       io.systemd.devices
 Requires:       io.systemd.journal
 Requires:       io.systemd.network
-Requires:       io.systemd.sysinfo
 Requires:       org.kernel.kmod
 Requires:       org.varlink.http
 Requires:       org.varlink.resolver
-Requires:       com.redhat.system
+Requires:       com.redhat.accounts
+Requires:       com.redhat.machine
 Requires:       libvarlink-util
 
 %description

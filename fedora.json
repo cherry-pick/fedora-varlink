@@ -57,12 +57,12 @@
       ]
     },
     {
-      "address": "unix:/run/com.redhat.system.accounts;mode=0666",
+      "address": "unix:/run/com.redhat.accounts;mode=0666",
       "interfaces": [
-        "com.redhat.system.accounts"
+        "com.redhat.accounts"
       ],
       "executable": {
-        "path": "/usr/lib/com.redhat.system/accounts.py"
+        "path": "/usr/lib/com.redhat/accounts.py"
       }
     }
   ]
