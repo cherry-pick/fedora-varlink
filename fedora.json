@@ -14,12 +14,12 @@
       }
     },
     {
-      "address": "unix:/run/io.systemd.journal;mode=0666",
+      "address": "unix:/run/com.redhat.logging;mode=0666",
       "interfaces": [
-        "io.systemd.journal"
+        "com.redhat.logging"
       ],
       "executable": {
-        "path": "/usr/bin/io.systemd.journal"
+        "path": "/usr/bin/com.redhat.logging"
       }
     },
     {
