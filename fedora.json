@@ -5,12 +5,12 @@
   "url": "https://github.com/varlink/fedora-varlink",
   "services": [
     {
-      "address": "unix:/run/io.systemd.devices;mode=0666",
+      "address": "unix:/run/com.redhat.devices;mode=0666",
       "interfaces": [
-        "io.systemd.devices"
+        "com.redhat.devices"
       ],
       "executable": {
-        "path": "/usr/bin/io.systemd.devices"
+        "path": "/usr/bin/com.redhat.devices"
       }
     },
     {

@@ -6,12 +6,12 @@ License:        ASL2.0
 URL:            https://github.com/varlink/%{name}
 Source0:        https://github.com/varlink/%{name}/archive/%{name}-%{version}.tar.gz
 BuildRequires:  systemd
-Requires:       io.systemd.devices
 Requires:       io.systemd.network
 Requires:       org.kernel.kmod
 Requires:       org.varlink.http
 Requires:       org.varlink.resolver
 Requires:       com.redhat.accounts
+Requires:       com.redhat.devices
 Requires:       com.redhat.logging
 Requires:       com.redhat.machine
 Requires:       libvarlink-util
