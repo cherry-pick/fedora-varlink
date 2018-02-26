@@ -1,6 +1,7 @@
 [Unit]
 Description=Varlink Service Resolver and Activator 
 Requires=org.varlink.resolver.socket
+After=org.varlink.resolver.socket
 
 [Service]
 Type=simple
