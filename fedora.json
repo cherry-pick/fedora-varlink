@@ -23,12 +23,12 @@
       }
     },
     {
-      "address": "unix:/run/io.systemd.network;mode=0666",
+      "address": "unix:/run/com.redhat.network;mode=0666",
       "interfaces": [
-        "io.systemd.network"
+        "com.redhat.network"
       ],
       "executable": {
-        "path": "/usr/bin/io.systemd.network"
+        "path": "/usr/bin/com.redhat.network"
       }
     },
     {
