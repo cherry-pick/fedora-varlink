@@ -1,5 +1,5 @@
 Name:           fedora-varlink
-Version:        2
+Version:        3
 Release:        1%{?dist}
 Summary:        Fedora Varlink System Interfaces
 License:        ASL2.0
@@ -8,7 +8,7 @@ Source0:        https://github.com/varlink/%{name}/archive/%{name}-%{version}.ta
 BuildRequires:  systemd
 Requires:       org.kernel.kmod
 Requires:       org.varlink.http
-Requires:       org.varlink.resolver
+Requires:       com.redhat.resolver
 Requires:       com.redhat.accounts
 Requires:       com.redhat.devices
 Requires:       com.redhat.logging
@@ -28,26 +28,23 @@ install fedora.json %{buildroot}%{_prefix}/lib
 sed -i -e 's#"version":\s*"[0-9]\+"#"version": "%{fedora}"#' %{buildroot}%{_prefix}/lib/fedora.json
 
 install -d %{buildroot}%{_unitdir}
-install -m 0644 org.varlink.resolver.service %{buildroot}%{_unitdir}
+install -m 0644 com.redhat.resolver.service %{buildroot}%{_unitdir}
 install -m 0644 org.varlink.resolver.socket %{buildroot}%{_unitdir}
 
 %post
-%systemd_post org.varlink.resolver.service org.varlink.resolver.socket
+%systemd_post com.redhat.resolver.service org.varlink.resolver.socket
 
 %preun
-%systemd_preun org.varlink.resolver.service org.varlink.resolver.socket
+%systemd_preun com.redhat.resolver.service org.varlink.resolver.socket
 
 %postun
 %systemd_postun
 
 %files
 %{_prefix}/lib/fedora.json
-%{_unitdir}/org.varlink.resolver.service
+%{_unitdir}/com.redhat.resolver.service
 %{_unitdir}/org.varlink.resolver.socket
 
 %changelog
-* Mon Jan 22 2018 Harald Hoyer <harald@redhat.com> - 2
-- replace fedora version
-
-* Tue Aug 29 2017 <info@varlink.org> 1-1
-- fedora-varlink 1
+* Mon Mar 19 2018 <info@varlink.org> 3-1
+- fedora-varlink 3

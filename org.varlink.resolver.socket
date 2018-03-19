@@ -1,8 +1,9 @@
 [Unit]
-Description=Varlink Service Resolver and Activator
+Description=Varlink Interface Resolver
 
 [Socket]
 ListenStream=/run/org.varlink.resolver
+Service=com.redhat.resolver.service
 
 [Install]
 WantedBy=sockets.target

@@ -52,8 +52,8 @@
     {
       "address": "unix:/run/org.varlink.resolver;mode=0666",
       "interfaces": [
-        "org.varlink.resolver",
-        "org.varlink.activator"
+        "com.redhat.resolver",
+        "org.varlink.resolver"
       ]
     },
     {
