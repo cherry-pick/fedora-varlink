@@ -7,7 +7,6 @@ URL:            https://github.com/varlink/%{name}
 Source0:        https://github.com/varlink/%{name}/archive/%{name}-%{version}.tar.gz
 BuildRequires:  systemd
 Requires:       org.kernel.kmod
-Requires:       org.varlink.http
 Requires:       com.redhat.resolver
 Requires:       com.redhat.accounts
 Requires:       com.redhat.devices
